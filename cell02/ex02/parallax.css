@@ -1,0 +1,53 @@
+body, html {
+	height: 100%;
+	margin: 0;
+}
+
+.parallax {
+	/* Full height */
+	height: 100%;
+
+	/* Create the parallax scrolling effect */
+	background-attachment: fixed;
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+
+.parallax-top {
+	/* The image used for the top parallax section */
+	background-image: url('pokemon_b1.jpg');
+}
+
+.parallax-bottom {
+	/* The image used for the bottom parallax section */
+	background-image: url('pokemon_b2.jpg');
+}
+
+/* Set the color of the text in the black div to white */
+div[style*="background-color:black"] {
+	color: black;
+}
+
+.parallax-container {
+	position: relative;
+	height: 100%;
+}
+
+.parallax-text {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	color: white;
+	font-size: 36px;
+	font-weight: bold;
+	text-align: center;
+}
+
+/* Turn off parallax scrolling for tablets and phones. Increase the pixels if needed */
+@media only screen and (max-device-width: 1366px) {
+	.parallax {
+		background-attachment: scroll;
+	}
+}
